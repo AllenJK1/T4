@@ -5,8 +5,10 @@ using namespace std;
 // this is basically the following for contexttr sum(n) = n + sum(n - 1),  base case: sum(0) = 0
 int sumN(int n) 
 {
-    if (n == 0)                 // base case
+    if (n == 0)
+    {// base case
         return 0;
+    }
     return n + sumN(n - 1);     // recursionn part
 }
 
@@ -24,7 +26,8 @@ long long factorial(int n)
 
 //  Nth term of the Fibonacci series (0, 1, 1, 2, 3, 5, 8, ...)
 // fib(n) = fib(n - 1) + fib(n - 2),  base cases: fib(0) = 0, fib(1) = 1 (excuse my abbreviations fib for fibonacci)
-int fibonacci(int n) {
+int fibonacci(int n) 
+{
     if (n == 0)
     {
       // base case .....
@@ -40,7 +43,8 @@ int fibonacci(int n) {
 
 // generate N terms of the fibonacci series or sequence bla bla bla
 // prints the current term 'a', then recurses with the next pair (b, a + b)
-void generateFib(int n, int a = 0, int b = 1) {
+void generateFib(int n, int a = 0, int b = 1) 
+{
     if (n == 0)
     {// base case basically when  no terms left
         return;
